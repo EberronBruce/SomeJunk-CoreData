@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A777C671E0A257100642230 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A777C661E0A257100642230 /* ItemDetailsVC.swift */; };
+		7A777C691E0A283600642230 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A777C681E0A283600642230 /* CustomTextField.swift */; };
 		7A7E86DF1E072A420061B1C9 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E86DE1E072A420061B1C9 /* MaterialView.swift */; };
 		7A7E86E11E072D690061B1C9 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E86E01E072D690061B1C9 /* ItemCell.swift */; };
 		7A8BA91C1E03821D0069ABB9 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8BA9141E03821D0069ABB9 /* Image+CoreDataClass.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A777C661E0A257100642230 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		7A777C681E0A283600642230 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		7A7E86DE1E072A420061B1C9 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		7A7E86E01E072D690061B1C9 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		7A8BA9141E03821D0069ABB9 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				7AEF03241DFE280D000A5540 /* MainVC.swift */,
+				7A777C661E0A257100642230 /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -70,6 +75,7 @@
 			children = (
 				7A7E86DE1E072A420061B1C9 /* MaterialView.swift */,
 				7A7E86E01E072D690061B1C9 /* ItemCell.swift */,
+				7A777C681E0A283600642230 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -210,11 +216,13 @@
 				7A7E86E11E072D690061B1C9 /* ItemCell.swift in Sources */,
 				7A8BA9231E03821D0069ABB9 /* Store+CoreDataProperties.swift in Sources */,
 				7A8BA91D1E03821D0069ABB9 /* Image+CoreDataProperties.swift in Sources */,
+				7A777C671E0A257100642230 /* ItemDetailsVC.swift in Sources */,
 				7A8BA9201E03821D0069ABB9 /* ItemType+CoreDataClass.swift in Sources */,
 				7AA762381DFFA33000B3D51F /* SomeJunk.xcdatamodeld in Sources */,
 				7A8BA9221E03821D0069ABB9 /* Store+CoreDataClass.swift in Sources */,
 				7AEF03231DFE280D000A5540 /* AppDelegate.swift in Sources */,
 				7A8BA91C1E03821D0069ABB9 /* Image+CoreDataClass.swift in Sources */,
+				7A777C691E0A283600642230 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

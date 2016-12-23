@@ -131,6 +131,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let objs = fetchedResultsController.fetchedObjects, objs.count > 0 {
+            let item = objs[indexPath.row] as! Item
+            
+            performSegue(withIdentifier: "ItemDetailsVC", sender: item)
+        }
+    }
+    
     func generateTestData() {
         
         let item = NSEntityDescription.insertNewObject(forEntityName: "Item", into: ad.persistentContainer.viewContext) as! Item
@@ -151,6 +159,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         ad.saveContext()
         
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ItemDetailsVC" {
+            let vc = segue.destination as! ItemDetailsVC
+            vc.itemToEdit = sender as? Item
+        }
     }
 }
 
